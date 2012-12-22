@@ -1,0 +1,11 @@
+language: php
+php:
+- 5.4
+- 5.3
+before_install: sh install-vendor.sh
+before_script:
+- php vendor/autoload.php
+script: sh run-test.sh
+
+
+
